@@ -37,12 +37,14 @@
 			top: 28vh;
 			width:172px;
 			height:172px;
+			cursor: pointer;
 		}
 		#cover{
 			width: 100%;
 			height: 100%;
 			border-radius: 10px;
 			border: solid grey 3px;
+			cursor: pointer;
 		}
 		#name_container{
 			max-width: 75%;
@@ -79,8 +81,8 @@
 	<div class="container">
 		<div id="cover_container">
 			<?php
-				echo "<img src='data:image/jpeg;base64,".base64_encode($USER_COVER)."' id='cover'>";
-				echo "<img src='data:image/jpeg;base64,".base64_encode($USER_PHOTO)."' id='profile'>";
+				echo "<img src='data:image/jpeg;base64,".base64_encode($USER_COVER)."' id='cover' title='Click to Change' onclick='location.href=`changeCover.php`'>";
+				echo "<img src='data:image/jpeg;base64,".base64_encode($USER_PHOTO)."' id='profile' title='Click to Change' onclick='location.href=`changeProfile.php`'>";
 			?>
 		</div>
 		<div id="name_container">

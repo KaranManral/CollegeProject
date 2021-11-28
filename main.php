@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#" target="main" class="theme_change">
+                <a href="setting.php" target="main" class="theme_change">
                     <span class="icon"><ion-icon name="settings"></ion-icon></span>
                     <span class="title">Setting</span>
                 </a>

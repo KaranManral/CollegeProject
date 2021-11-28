@@ -23,7 +23,7 @@ body{
     box-sizing: initial;
     background: #f545d8;
     /* 4d5bf9 */
-    transition: all 1s;
+    transition: all 0.7s;
 }
 .navigation ul{
     position: absolute;
@@ -91,7 +91,7 @@ body{
     box-sizing: initial;
     background-color: white;
     /* 4d5bf9 */
-    transition: all 1s;
+    transition: all 0.7s;
 }
 #icon
 {
