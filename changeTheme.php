@@ -13,7 +13,7 @@
         {
             $sql ="UPDATE theme SET userTheme='light' WHERE email='$email'";
             if(mysqli_query($conn,$sql))
-                echo "<script>alert('Theme changed to Light.');parent.location.reload();</script>";
+                echo "<script>alert('Theme changed to Light.');parent.location.href='main.php';</script>";
             else
                 echo "<script>alert('Theme not changed.');location.href='setting.php';</script>";
         }
@@ -21,7 +21,7 @@
         {
             $sql ="UPDATE theme SET userTheme='dark' WHERE email='$email'";
             if(mysqli_query($conn,$sql))
-                echo "<script>alert('Theme changed to Dark.');parent.location.reload();</script>";
+                echo "<script>alert('Theme changed to Dark.');parent.location.href='main.php';</script>";
             else
                 echo "<script>alert('Theme not changed.');location.href='setting.php';</script>";
         }

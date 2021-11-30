@@ -183,7 +183,7 @@
         if(mysqli_query($conn,$sql))
             echo "<script>alert('Cover Photo updated.');location.href='profile.php';</script>";
         else
-            echo "<script>alert('Cover Photo not updated.');parent.location.reload();</script>";
+            echo "<script>alert('Cover Photo not updated.');parent.location.href='main.php';</script>";
     }
 ?>
 

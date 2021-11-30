@@ -53,25 +53,25 @@ if (isset($_POST["signup"])) {
                 } 
                 else 
                 {
-                    echo "<script>alert('Error creating account, try again after some time.');parent.location.reload();</script>";
+                    echo "<script>alert('Error creating account, try again after some time.');parent.location.href='main.php';</script>";
                     exit();
                 }
             }
             else
             {
-                echo "<script>alert('Account already created with this email.Please Login or use another email.');parent.location.reload();</script>";
+                echo "<script>alert('Account already created with this email.Please Login or use another email.');parent.location.href='main.php';</script>";
                 exit();
             }
         }
         else
         {
-            echo "<script>alert('Error creating account, try again after some time.');parent.location.reload();</script>";
+            echo "<script>alert('Error creating account, try again after some time.');parent.location.href='main.php';</script>";
             exit();
         }
     }
     else 
     {
-        echo "<script>alert('Error creating account, try again after some time.');parent.location.reload();</script>";
+        echo "<script>alert('Error creating account, try again after some time.');parent.location.href='main.php';</script>";
         exit();
     }
 }
