@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-header{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: #150050;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.top-header h1{
+    padding: 5px 5px;
+}
+
+/*************************************** Navigation Menu ***************************************/
+nav{
+    display: flex;
+    padding: 0% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Hover effect on menu */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*************************************** Main Container ***************************************/
+.main-container{
+    width: 65%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+/********************* Course Table *********************/
+
+.course-table{
+    padding: 8px;
+    color: black;
+}
+
+.syllabus-table{
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 1.1em;
+    min-width: 400px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.syllabus-table:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.syllabus-table thead tr{
+    background-color: #0089B5;
+    color: #fff;
+    font-weight: bold;
+}
+
+.syllabus-table th{
+    padding: 12px 6px;
+}
+
+.syllabus-table th a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.syllabus-table td{
+    padding: 2px 5px;
+}
+
+.course-divider{
+    border-bottom: 1px solid #dddddd;
+}
+
+.sem-divider{
+    border-bottom: 3px solid #0089B5;
+}
+
+.syllabus-table tbody tr:last-of-type{
+    border-bottom: 3px solid #0089B5;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+/*********************** Course List ***********************/
+
+.course-list{
+    padding-top: 10px;
+}
+
+.course-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-block{
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.list-block h2{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.list-block-content{
+    display:flex;
+}
+
+.dsc-course-name,
+.sec-course-name,
+.dse-course-name,
+.aecc-course-name,
+.ge-course-name{
+    padding-bottom: 5px;
+}
+
+.dsc-block:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.dse-block:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.sec-block:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.aecc-block:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.ge-block:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.misc-info{
+    font-size: 20px;
+    flex: 1;
+}
+
+.misc-info-box{
+    height: 50px;
+    padding: 10px 10px;
+    width: 200px;
+}
+
+.depart-ge-block a{
+    text-decoration: none;
+    color: black;
+}
+
+/************************************** Footer Section **************************************/
+
+.footer{
+    box-sizing: border-box;
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #150050;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-content{
+    display: flex;
+    padding-left: 350px;
+}
+
+.footer-content h3{
+    padding-bottom: 13px;
+}
+
+.contribute ul li{
+    padding: 5px;
+}
